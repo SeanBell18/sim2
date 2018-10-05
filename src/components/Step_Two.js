@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-
-class Step_One extends Component {
+export default class Step_One extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            name: '',
+            address: '',
+            city: '',
+            state: '',
+            zipcode: 0
+        }
         this.handleName = this.handleName.bind(this)
         this.handleAddress = this.handleAddress.bind(this)
         this.handleCity = this.handleCity.bind(this)
@@ -25,6 +29,3 @@ class Step_One extends Component {
         </div>
     }
 }
-
-const mapStateToProps = state => state
-export default connect(mapStateToProps)(Step_One)

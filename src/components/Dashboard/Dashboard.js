@@ -25,7 +25,7 @@ export default class Dashboard extends Component {
         return (
             <div>
                 <h2>Dashboard</h2>
-                <Link to='/wizard'><button>Add New Property</button></Link>
+                <Link to='/wizard/Step1'><button>Add New Property</button></Link>
                 <House houses ={this.state.house} handleDelete ={this.handleDelete}/> 
             </div>
         )

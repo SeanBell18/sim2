@@ -6,7 +6,7 @@ const massive = require('massive')
 
 const port = process.env.SERVER_PORT
 const app = express()
-
+app.use(express.static(path.join(__dirname, '../public')))
 app.use(bodyParser.json())
 
 massive(process.env.CONNECTION_CODE)
